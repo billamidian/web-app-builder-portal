@@ -1,0 +1,31 @@
+{
+  "name": "web-app-builder-portal",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "type-check": "turbo run type-check",
+    "deploy": "vercel --prod",
+    "install:all": "npm install --legacy-peer-deps"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.2",
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "packageManager": "npm@9.8.1"
+}

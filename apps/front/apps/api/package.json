@@ -1,0 +1,40 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "NestJS GraphQL API for Web App Builder Portal",
+  "scripts": {
+    "dev": "nest start --watch",
+    "build": "nest build",
+    "start": "node dist/main",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "ts-node src/database/migrate.ts",
+    "db:seed": "ts-node src/database/seed.ts"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.0",
+    "@nestjs/apollo": "^12.0.11",
+    "@nestjs/common": "^11.0.20",
+    "@nestjs/core": "^11.0.20",
+    "@nestjs/graphql": "^12.0.11",
+    "@nestjs/jwt": "^10.2.0",
+    "@nestjs/platform-express": "^11.0.20",
+    "@pbc/common": "workspace:*",
+    "@pbc/dto": "workspace:*",
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "drizzle-orm": "^0.30.1",
+    "graphql": "^16.8.1",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/pg": "^8.10.9",
+    "drizzle-kit": "^0.20.14",
+    "ts-node": "^10.9.2"
+  }
+}

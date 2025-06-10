@@ -1,0 +1,19 @@
+/* Calendar page specific styles */
+#ycbm-container {
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+}
+
+#ycbm-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Fix for mobile responsiveness */
+@media (max-width: 768px) {
+  #ycbm-container {
+    min-height: 600px;
+  }
+}
